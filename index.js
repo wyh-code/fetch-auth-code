@@ -1,7 +1,1 @@
-const qr = require('./qr')
-const fetchAuthCode = require('./fetchAuthCode')
-
-module.exports = {
-  fetchAuthCode,
-  qr
-}
+module.exports = require('./fetchAuthCode');
