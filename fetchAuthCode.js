@@ -7,7 +7,7 @@ const config = require('./lib/config')
 const s = require('./lib/script')
 const fetchAuthCodeUrl = 'http://www.mockdata.cn/fetchAuthCode'
 
-module.exports = function (option) {
+export default function (option) {
   if (Object.prototype.toString.call(option) !== '[object Object]') {
     return {
       code: 1,
