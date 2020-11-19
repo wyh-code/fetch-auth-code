@@ -1,6 +1,6 @@
 const request = require('request');
-const cheerio = require('cheerio');
 const querystring = require('querystring');
+const cheerio = require('cheerio');
 
 const baseUrl = 'https://open.weixin.qq.com/connect/qrconnect';
 const appid = '';
