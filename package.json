@@ -1,6 +1,6 @@
 {
   "name": "fetch-auth-code",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "wechat QQ 微信 auth auth-code",
   "main": "index.js",
   "scripts": {
