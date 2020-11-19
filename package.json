@@ -1,0 +1,31 @@
+{
+  "name": "fetch-auth",
+  "version": "1.0.0",
+  "description": "wechat QQ 微信 auth auth-code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyh-code/fetch-auth.git"
+  },
+  "keywords": [
+    "wechat",
+    "QQ",
+    "微信",
+    "auth",
+    "auth-code"
+  ],
+  "author": "wyh-code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyh-code/fetch-auth/issues"
+  },
+  "homepage": "https://github.com/wyh-code/fetch-auth#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "querystring": "^0.2.0",
+    "request": "^2.88.2"
+  }
+}
