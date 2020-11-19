@@ -3,11 +3,18 @@
 ## 解决本地开发调试时，redirect_uri 回调公网的不便
 <br /> 
 
-### 将授权回调地址配置为以下地址
+### 登录开放平台，将授权回调地址配置为以下地址
+
+<br /> 
+
 ```
 www.mockdata.cn
 ```
-![授权回调](/mockdata.png)
+<br /> 
+
+
+![授权回调](https://raw.githubusercontent.com/wyh-code/fetch-auth-code/master/mockdata.png)
+<br /> 
 <br /> 
 
 * * *
