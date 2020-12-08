@@ -39,13 +39,13 @@ const data = await fetchAuthCode({
 })
 
 console.log(data)
-//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined-1605887483942.0002' }
+//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined' }
 ```
 
 
 ### 使用二（手动轮询）
 ```js
-const qr = qr({
+const q = qr({
   id: 'xx',
   appid: 'xxx'
 })
@@ -53,7 +53,7 @@ const qr = qr({
 // 开启轮询
 const code = await q.fetchCode()
 console.log(code)
-//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined-1605887483942.0002' }
+//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined' }
 
 // 停止轮询
 q.stop()
@@ -66,6 +66,10 @@ console.log(code)
 // {code: 200, type: "clear"}
 
 ```
+
+### version
+**3.1.0**       
+修改轮询方式
 
 
 参数说明        
