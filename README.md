@@ -27,52 +27,42 @@ npm install fetch-auth-code --save-dev
 ```
 ### 项目引入
 ```
-import fetchAuthCode, { qr } from './fetchAuthCode.js';
+import { qr } from './fetchAuthCode.js';
 ```
 
-
-### 使用一（持续轮询）
+### 使用
 ```js
-const data = await fetchAuthCode({
-  id: 'xx',
-  appid: 'xxx'
-})
-
-console.log(data)
-//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined' }
-```
-
-
-### 使用二（手动轮询）
-```js
+// 生成二维码
 const q = qr({
   id: 'xx',
   appid: 'xxx'
 })
 
-// 开启轮询
+// 查询 code
 const code = await q.fetchCode()
 console.log(code)
-//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined' }
+//{ code: '051wQKFa1UmB0A0LoGFa1j7YlK2wQKFe', state: 'undefined', type: 'code'|'error' }
 
-// 停止轮询
+// 停止查询
 q.stop()
 console.log(code)
-// {code: 200, type: "stop"}
+// {code: code, type: "stop", state: 'undefined'}
 
 // 清除二维码
 q.clear()
 console.log(code)
-// {code: 200, type: "clear"}
+// {code: code, type: "clear", state: 'undefined'}
 
 ```
 
 ### version
+**3.1.1**       
+删除 fetchAuthCode 持续轮询
 **3.1.0**       
 修改轮询方式
 
 
-参数说明        
+### 参数说明        
 https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html
 
 ![参数说明](https://raw.githubusercontent.com/wyh-code/fetch-auth-code/master/params.png)
