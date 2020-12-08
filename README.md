@@ -57,7 +57,8 @@ console.log(code)
 
 ### version
 **3.1.1**       
-删除 fetchAuthCode 持续轮询
+删除 fetchAuthCode 持续轮询       
+
 **3.1.0**       
 修改轮询方式
 
